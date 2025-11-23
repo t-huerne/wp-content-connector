@@ -4,7 +4,7 @@ A robust WordPress plugin demonstrating advanced development techniques includin
 
 ---
 
-## 🎯 Code Samples Guide (Recruiter's Checklist)
+## 🎯 Code Samples Guide (Assignment Checklist)
 
 This plugin serves as a cohesive portfolio answering the specific technical requirements:
 
