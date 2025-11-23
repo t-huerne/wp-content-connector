@@ -45,6 +45,20 @@
         min-height: 250px;
     }
 
+    .related-post-category {
+        display: inline-block;
+        background-color: $color-tag-teal;
+        color: $color-white;
+        border-radius: 50px;
+        font-size: 12px;
+        font-weight: 600;
+        margin: 0 0 10px 0;
+        padding: 4px 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        max-width: fit-content;
+    }
+
     .related-post-title {
         margin: 10px 0;
         font-family: $font-family-base;
