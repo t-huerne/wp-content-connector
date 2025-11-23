@@ -97,6 +97,9 @@ function wcc_get_related_posts( $request ) {
 	// Format the response
 	$formatted_posts = array_map(
 		function( $post ) use ( $format ) {
+			$categories = get_the_category( $post->ID );
+        	$category_name = ! empty( $categories ) ? $categories[0]->name : '';
+        
 			return array(
 				'id'              => $post->ID,
 				'title'           => get_the_title( $post ),
@@ -106,6 +109,7 @@ function wcc_get_related_posts( $request ) {
 				'author'          => get_the_author_meta( 'display_name', $post->post_author ),
 				'author_avatar'   => get_avatar_url( $post->post_author, array( 'size' => 80 ) ),
 				'featured_image'  => get_the_post_thumbnail_url( $post, 'medium' ),
+				'category'        => $category_name,
 			);
 		},
 		$related_posts

@@ -77,24 +77,44 @@ function RelatedPostsView({ postId, postsToShow, dateFormat }) {
                 {posts.map((post) => (
                     <article key={post.id} className="related-post-card">
                         <div className="related-post-image">
-                            <a href={post.url}>
+                            {post.url ? (
+                                <a href={post.url}>
+                                    <img 
+                                        src={post.featured_image || placeholderImage} 
+                                        alt={post.title}
+                                        loading="lazy"
+                                        className={!post.featured_image ? 'placeholder' : ''}
+                                    />
+                                </a>
+                            ) : (
                                 <img 
                                     src={post.featured_image || placeholderImage} 
                                     alt={post.title}
                                     loading="lazy"
                                     className={!post.featured_image ? 'placeholder' : ''}
                                 />
-                            </a>
+                            )}
                         </div>
                         
                         <div className="related-post-content">
+							{post.category && (
+								<span className="related-post-category tag tag-teal">
+									{post.category}
+								</span>
+							)}
                             <h4 className="related-post-title">
-                                <a href={post.url}>{post.title}</a>
+                                {post.url ? (
+                                    <a href={post.url}>{post.title}</a>
+                                ) : (
+                                    <span>{post.title}</span>
+                                )}
                             </h4>
                             
-                            <div className="related-post-excerpt">
-                                {post.excerpt}
-                            </div>
+                            {post.excerpt && (
+                                <div className="related-post-excerpt">
+                                    {post.excerpt}
+                                </div>
+                            )}
                             
                             <div className="related-post-meta">
                                 <img 
