@@ -86,8 +86,6 @@ The assignment required React without ACF, but this choice also demonstrates com
 For this specific use case (related posts), ACF would work fine. I chose React to show proficiency with the Block Editor's component library and demonstrate understanding of modern JavaScript patterns in WordPress development.
 **The complexity here:**
 
-This isn't just a static block - it's a full data-driven component:
-
 1. **Dual rendering:** Different code paths for editor vs. frontend
    - Editor (`edit.js`): Shows preview with inspector controls
    - Frontend (`view.js`): Hydrates with React, fetches real data via AJAX
