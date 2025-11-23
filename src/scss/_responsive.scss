@@ -1,0 +1,17 @@
+/**
+ * Responsive Adjustments
+ * 
+ * Ajustements spécifiques pour différentes tailles d'écran.
+ */
+
+// Ajustements Mobile
+@media (max-width: 767px) {
+    .related-posts-grid {
+        gap: $spacing-sm; // Moins d'espace entre les cartes sur mobile
+    }
+    
+    .related-post-card .related-post-image {
+        aspect-ratio: 3 / 2; // Image un peu plus haute sur mobile
+    }
+}
+

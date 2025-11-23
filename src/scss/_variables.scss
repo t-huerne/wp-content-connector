@@ -1,0 +1,41 @@
+/**
+ * Variables SCSS
+ */
+
+ // Import Google Font
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+
+// Colors
+$color-text: #2b2a2a;
+$color-text-light: #6b6968;
+$color-link: #0073aa;
+$color-link-hover: #005a87;
+$color-border: #e2e2e2;
+$color-bg-light: #f3fbfb;
+$color-white: #ffffff;
+
+// Tag colors
+$color-tag-teal: #0097b2;
+$color-tag-purple: #3d1d94;
+$color-tag-pink: #a81dae;
+
+// Typography
+$font-family-base: "Open Sans", sans-serif;
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+// Spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;
+
+// Grid
+$grid-gap: $spacing-lg;
+$card-border-radius: 8px;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;

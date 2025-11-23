@@ -1,0 +1,64 @@
+# WordPress Plugin .gitignore
+
+# Node modules
+node_modules/
+package-lock.json
+
+# Build artifacts (compiled from src/)
+build/
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.project
+.settings/
+.buildpath
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Webpack
+.webpack/
+
+# Testing
+coverage/
+.nyc_output/
+.phpunit.result.cache
+
+# Composer (if using)
+vendor/
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+

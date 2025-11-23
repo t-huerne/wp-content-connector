@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wcc/related-posts",
+	"title": "Related Posts",
+	"category": "widgets",
+	"icon": "admin-links",
+	"description": "Display related posts based on shared categories.",
+	"keywords": ["related", "posts", "similar"],
+	"version": "1.0.0",
+	"textdomain": "wp-content-connector",
+	"attributes": {
+		"postsToShow": {
+			"type": "number",
+			"default": 6
+		},
+		"dateFormat": {
+			"type": "string",
+			"default": "F j, Y"
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": true
+	},
+	"editorScript": "file:../../build/index.js",
+	"editorStyle": "file:../../build/index.css",
+	"style": "file:../../build/style-style.css",
+	"viewScript": "file:../../build/view.js"
+}
