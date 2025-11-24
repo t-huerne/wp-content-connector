@@ -29,7 +29,3 @@ With more time, I would add:
 3. **Unit Tests:** Add Jest tests for React components and PHPUnit for REST API endpoints
 4. **Enhanced Algorithm:** Use tags alongside categories with a scoring system for better relevance
 5. **Admin Settings:** Add WordPress admin page for configuring defaults (excerpt length, posts per page)
-
----
-
-**Word Count:** ~250 words
