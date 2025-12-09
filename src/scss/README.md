@@ -96,7 +96,4 @@ npm run start
 npm run build
 ```
 
-## ⚠️ Note sur @import
-
-Les warnings `@import is deprecated` sont normaux. SCSS moderne utilise `@use` mais @import fonctionne encore. Tu peux les ignorer pour l'instant.
 
